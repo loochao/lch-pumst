@@ -1,0 +1,95 @@
+#+-*- coding:utf-8 -*-
+#+STARTUP: Overview
+#+OPTIONS: num:nil h:3 TeX:t LaTeX:t toc:nil f:t \n:t
+
+* Outline
+*** Introduction
+- X-Ray
+- LWI
+- Various particles after laser passes.
+*** Helium Experiment
+- Setup
+  + Laser system
+    - KML System
+    - Tarlas system -- Weifeng's Thesis
+  + Image system
+  + Syncronization
+- Theory
+- Experiment
+- Linebroanding analysis
+*** Simulation
+  + Yoav's code -- work on this.
+  + Probably write my own code.
+*** Boron and Carbon
+
+* Introduction
+** X-Ray Laser
+To make an X-ray laser at 58nm.
+ionization-recombination
+
+The ion-electron recombination occurs on a time scale faster then 1 ps
+which creates $Li^{2+}$ (He-like) ions in highly excited states (large principle quantum number n). By collisions atoms are transferred to states with smaller n on a few ps time scale. For proper density population inversion between the level n = 2 and the ground state (n = 1) is created for 10 − 100 ps. This results in lasing on the wavelength of the n = 2 to n = 1 transition (13.5nm) which is measured by a spectrometer.
+
+- XUV
+** Plasma
+cold plasma 1-2ev
+
+** Helium
+** LWI
+*** Principle
+Usually, the gain medium of a laser works on the basis of a population inversion. In the 1990s, however, it was shown that optical amplification and consequently lasing without inversion are possible by using an additional optical or microwave field which induces a quantum coherence in the atoms of the gain medium. The basic idea is to provide two different pathways for atoms to get from the ground state to the excited state – a direct one and another one via a third energy level –, and to induce a quantum coherence, so that the quantum-mechanical probability amplitudes for both processes cancel. In effect, this suppresses the reabsorption and thus makes it possible to obtain gain even with a small population in the upper state.
+
+In principle, lasing without inversion could help, e.g., in realizing lasers operating on very short wavelengths, where a population inversion is difficult to achieve.
+*** Dark State
+The idea:
+Pump atoms into dark state, then emission from |1> can exceed absorption from ground states.
+
+*** 三能级图							       :TODO:
+*** Atomic Coherence 						   :Question:
+In physics, atomic coherence is the induced coherence between levels of a multi-level atomic  system sometimes observed when it interacts with a coherent electromagnetic field.
+
+**** 量子叠加态上的, dark state 既
+*** Rabi frequency						   :Question:
+The Rabi frequency for a given atomic transition in a given light field gives the strength of the coupling between the light and the transition. Rabi flopping between the levels of a 2-level system illuminated with resonant light, will occur at the Rabi frequency. The Rabi frequency is a semiclassical  concept as it is based on a quantum atomic transition and a classical light field.
+
+*** Helium
+The brightness of an Atomic spectral line emitted by atoms in a gas (or plasma) can be proportional to the gas's temperature, pressure or a weighted sum of both.
+
+*** Electron density
+*** Power density
+*** Inversion or No inversion
+
+** EIT
+* Setup
+** Lasers and OPAs
+**** Powers
+**** Lens
+a low power 2 Hz Nd/YAG laser (100 mJ, 5ns) was focused with an f/6 lens.
+
+After a few hundred nsec delay (varied between 300 and 1000 ns), the Ti:sapphire 250 fs
+laser was fired, whose energy is 50 − 60 mJ in a repetition rate 2 Hz. This femto-second
+laser was tightly focused with the same f/6 lens onto the plasma at the entrance of the
+microcapillary providing a power density close to 2×1017 W/cm2.
+
+was directed to the microcapillary by a near 100reflectivity mirror, M1, and the femto-second
+laser beam was directed by directed by a mirror, M2 which is transparent for the 1.06 μm
+wavelength of the Nd/YAG laser. From the output spectra, we could see the soft X-ray
+lasing.
+**** The power of focused beam to create Plasma.
+** Optical Path Sketch
+** Photos
+*** Helium
+*** Optical Path
+* Preliminary Results and Discussion
+Purpose: Verify
+** Absorption Spectrum
+** FWHM vs Pressure, Delay
+*** Different broadening
+Gaussian broadening refers to broadening effects in spectral lines, these can be produced by Doppler broadening and natural broadening.
+     - Natural
+     - Doppler
+     - Collision
+*** Absorption coefficient
+Verify population on 2 $S^3$
+*** Dynamic Process of Recombination
+** Helium ironize spectra
