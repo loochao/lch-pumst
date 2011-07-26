@@ -1,12 +1,18 @@
-#+-*- coding:utf-8 -*-
+#+-*- coding:utf-8; mode:org-*-
 #+STARTUP: Overview
 #+OPTIONS: num:nil h:3 TeX:t LaTeX:t toc:nil f:t \n:t
 
+* TODO
+*** Listen to the Voices
 * Outline
 *** Introduction
-- X-Ray
-- LWI
-- Various particles after laser passes.
+- X-Ray -- Anatoly's paper.
+- LWI.
+- Various particles after laser passes -- figures.
+- Discussion with yushan.
+*** Theory
+- How to eliminate collision.
+- 找Anatoly写论文去.
 *** Helium Experiment
 - Setup
   + Laser system

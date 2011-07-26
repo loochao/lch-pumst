@@ -39,7 +39,7 @@ clean:
                    ! -name "*.bib" \) \
             -exec rm -rf {} \;
 
-cleanall:
+extraclean:
 	find -E . \( -name "*.aux" \
 	          -o -name "$(NAME).*" \
                    ! -name "*.tex" \

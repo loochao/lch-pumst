@@ -1,0 +1,24 @@
+* Introduction
+** Recombination X-Ray
+*** Difference with collisional X-Ray laser.
+** LWI
+*** Quantum Coherence
+*** LWI
+** Motivation
+* Theory
+** Recombination X-Ray laser
+*** The whole processes
+*** All the processes, like 3-body Recombination.
+*** Tunnelling ionization
+*** Heating mechanism
+** LWI
+*** Theory by Anatoly
+* Experiment
+** Setup
+** Population Probing Techniques
+*** Transmission study of probe beam: Pressure broadening.
+*** Absorption vs Delay.
+*** Absorption vs probe energy.
+** Simulation Results.
+** Broadening
+** Carbon line identification.
