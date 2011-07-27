@@ -29,6 +29,7 @@ pdf: $(SOURCE)
 	pdflatex $(NAME)
 	bibtex $(NAME)
 	pdflatex $(NAME)
+	pdflatex $(NAME)
 
 clean:
 	find -E . \( -name "*.aux" \

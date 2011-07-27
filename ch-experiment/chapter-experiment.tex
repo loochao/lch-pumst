@@ -1,18 +1,328 @@
 \chapter{Experiment\label{ch:experiment}}
-
-
 \section{Apparatus}
+Lasing system with a Ti:Sapphire amplifier lasing @ $800nm$, with a
+pulse duration of $50ns$ and output energy of $3mJ$.
+
+Optical parametric amplifier with a tunable wavelength wavelength
+between $500nm ~ 2\mu m$, max energy is $100mJ$.
 \section{Population probing techniques}
+\subsection{Emission}
+The first thing we want to study is probing the population at
+different stages of ionized Helium. When you ionize Helium, the
+electrons will recombine, cascaded down through collision to lower
+state. So we want to know populations of certain level at certain
+stage.
+
+Several techniques have been developed to observe the behavior of this
+ionized Helium.
+
+The intense ionizing beam which is $800nm$ is focused to generate
+ionized Helium and a plasma.
+picture.
+
+One of the emission lines of Helium which is dominating in visible, is
+$587nm$.
+
+Quantum weighs of triplet are 3 times bigger than singlet, so even the
+A and B coefficient are similar, we see stronger lines.
+
+Pressure broadening:
+This is emission line at different pressure. The higher pressure you
+have , the broader line width you will get.
+
+Gated CCD spectra:
+you record the spectra at different time of the Helium ionization, so
+you get the dynamics of the emission of 587 lines, as a function of
+time. From the spectrum, we could see that the peak occurs roughly at
+$10ns$ after ionization. Besides, the width of the spectra is
+shrinking as time goes by. The reason is that, after the ionization,
+the density of the electron is high, and the width is due to collision
+between electrons and atoms. As the plasma expand, you can see the
+line gets narrower.
+
+At different delay time, you can see different width of the spectra line.
 \subsection{Transmission study}
+Another technique is also developed to observe the population at
+certain levels, by sending in a femto-second laser pulse, resonating
+with one of the transitions.
+
+One of the advantage of using femto-second laser is that it has very
+wide spectrum, much wider than the transition itself.
+
+So you could see absorption directly at the transmission spectra, of
+the transmitted probe beam.
+
 \subsection{Absorption vs Delay}
+Typical spectra of femto-second pulse without ionizing Helium are 50fs
+wide. As the time progress, you can see bigger and bigger effects of
+the absorptio due to the accumulation of population of $2^3S$ over
+time. This is done at fixed pressure.
+
 \subsection{Absorption vs probe energy}
-\section{Broadening}
+At different probing energy, you can see saturation effects because
+depletion of population.
+
+\subsection{linewidth as a function of pressure}
+Another transition at $587nm$, which you also see this absorption
+effects, we can carefully measure the line width at different
+pressure.
+
+Low pressure, it's linear, at higher pressure, because of saturation,
+it's non-linear.
+
+We have developed a method for probing the population evolution of
+excited atoms, we are going to use this not only to measure the
+population, but also linewidth, such as collision rates.
+
+\section{Broadening Analysis}
+Experiments show the line broadening of $587nm$ ($2^3P->3^3D$) is
+$0.5nm$, while $1080nm$ ($2^3s->2^3P$), it's $0.4nm$
+
+The Experiment Parameters are:
+Helium: $200mbar$, the atom density is $5x10^{18}cm^{-3}$
+Probe beam delay: $10ns$
+Electron density: $2x10^{17}cm^{-3}$
+Atom density(excited): $10^{14}cm^{-3}$
+Electron temperature: $0.5eV$
+
+For a rough estimation of electron-atom collision cross section, we
+could use the equation as follows:
+\begin{equation}
+\sigma_{ea} = (n^2a_B)^2; \tau_{ea}=\frac{1}{N_e v_e \sigma_{ea}} =
+212 ps (for 1.08 \mu m)
+\end{equation}
+picture.
+
+There are different broadening mechanism:
+- Natural: quite narrow, usually on the order of $1/1000$ $\Delta
+\lambda_{collision}$, so could be neglected.
+- Doppler: Due to thermal motion of the emitter.
+- Instrumental: Equals to slit width times dispersion by grating.
+- Collisional: When emitting, if the emitter colloided by other
+particles, the emitting process will be disturbed.
+- Other: Like the superradiance?
+
+\subsection{Doppler Broadening}
+\begin{equation}
+\Delta w = 2 \sqrt{ln2} \sqrt{ \frac{2kT \lambda^2_0}{mc^2} }
+\end{equation}
+
+For $587nm$: $\Delta w_D = 0.32 nm$ while total is $5 \AA$.
+For $1080nm$: $\Delta w_D = 0.59 nm$ while total is $24 \AA$.
+
+So the Doppler broadening could be neglected.
+
+\subsection{Instrumental Broadening}
+Slit width: $40\mu m$
+
+Instrumental broadening: $4 \AA$
+
+Subtract instrumental from total:
+
+587: $\sqrt{0.5^2-0.4^2} = 0.3 nm ~ 2.1 ps$
+
+1080: $\sqrt{2.4^2-0.4^2} = 2.36 nm ~ 0.6 ps$
+
+\subsection{Collisional Broadening}
+Picture.
+
+There's atom-atom collision and atom-election collision
+(?electron-electron?)
+
+But since the electron density ($10^{17}cm^{-3}$) is much higher than
+atom density ($10^{14}cm^{-3}$), so the electron-atom collision will
+dominate.
+
+The weight of atoms are much higher than electrons, so atoms could not
+gain much speed when laser present, while electron is fast!
+
+Electron atom collision includes electron-impact excitation and
+ionization, and their reverse processes, so one only need to consider
+one of those processes.
+
+Our electron is cold, only $0.5eV$, so the ionization cross section is
+small, which could be neglected.
+
+After the laser passed, it could be assumed that there's no photon, so
+all photon related process like photo ionization/excitation could be
+neglected.
+
+Our electron density is high $10^{17}cm^{-3}$, so after laser passed,
+electron reaches their local thermal equilibrium (LTE)(ref) quickly, at
+$10ns$. Of course, Maxwellian distribution could be assumed.
+
+To summarize, we just need to consider electron impact excitation,
+under electron Maxwellian distribution.
+
+From the Ralchenko paper(ref), we found the cross section fitting
+curve, for electron impact transition between different states. This
+curve is trustable, for it match experiments quite well.
+
+The cross section is given by:
+\begin{equation}
+\sigma(E,\Delta E) = a_0^2 \pi \frac{R_y}{g_l E}
+\Omega(\frac{E}{\Delta E})
+\end{equation}
+Where $a_0$ is just Bohr radius, $\pi a_0^2 = 0.8797 * 10^{-16} cm^2$,
+$g_l$ is the statistical weight, for $2^3 S$ and $2^3 P$, $g_l = 3$.
+$R_y = 13.6057 eV$ is the Rydberg energy. And $E$ is the collisional
+energy, where $E=\frac{1}{2}mv^2$, $v$ could be calculated by
+averaging through a Maxwellian distribution.
+
+picture.
+
+$\Delta E$ is the energy difference between initial and final states,
+for $587nm$: it's $\frac{1.24}{0.587} eV$, while for $1080nm$, it's
+$\frac{1.24}{1.08} eV$.
+
+\begin{equation}
+\Omega(x) = (A_1 ln(x) + A_2 + \frac{A_3}{x} + \frac{A_4}{x^2} +
+\frac{A_5}{x^3}) (\frac{x+1}{x+A_6})
+\end{equation}
+
+For $2^3S -> 2^3P$, those coefficients are:
+
+\begin{tabular}{ l | r }
+  $A_1$ & $7.696 * 10^1$ \\
+  $A_2$ & $1.250 * 10^2$ \\
+  $A_3$ & $4.938 * 10^1$ \\
+  $A_4$ & $-4.778 * 10^1$ \\
+  $A_5$ & $3.189 * 10^2$ \\
+  $A_6$ & $8.157$
+\end{tabular}
+
+While for $2^3S -> 2^3P$, those coefficients are:
+
+\begin{tabular}{ l | r }
+  $A_1$ & $1.414 * 10^2$ \\
+  $A_2$ & $9.031 * 10^1$ \\
+  $A_3$ & $-6.238 * 10^2$ \\
+  $A_4$ & $1.183 * 10^3$ \\
+  $A_5$ & $-6.424 * 10^2$ \\
+  $A_6$ & $8.626$
+\end{tabular}
+
+So now we got everything to estimate $\sigma v$
+\begin{equation}
+\sigma(E,\Delta E) = \pi a_0^2 \frac{R_y}{g_l E}\Omega(\frac{E}{\Delta
+E})
+\end{equation}
+
+Since we have Maxwellian distribution:
+\begin{equation}
+f(v) dv = (\frac{m}{2\pi k T})^(\frac{3}{2})4\pi v^2
+exp(\frac{-mv^2}{2kT}) dv
+\end{equation}
+
+by switching to energy using, $E=\frac{1}{2}mv^2$, $v=\sqrt{2E}{m}, dv
+=\frac{1}{\sqrt{2mE}}dE$, we got:
+\begin{equation}
+f(E)dE=(\frac{m}{2\pi k T})^{\frac{3}{2}}4\pi \frac{2E}{m} exp(-
+\frac{E}{kT}) \frac{1}{\sqrt{2mE}} dE
+\end{equation}
+So we get:
+\begin{equation}
+<\sigma v> = \int_0^{+\inf} \sigma(E)\sqrt{\frac{2E}{m}}f(E)dE
+\end{equation}
+Then using,
+\begin{equation}
+\tau_{ea} = \frac{1}{N_e<\sigma v>}
+\end{equation}
+Where $N_e=2*10^{17}cm^{-3}$
+
+By using Mathematica to compute the integral, it turns out that
+$\tau_{ea}$ is quite small. This results is reasonable, for our
+electron is cold, $kT=0.5eV$, this is small compared to $3^3D$ ->
+$2^3P$ and $2^3P$ -> $2^3S$ gap, so the cross section should be small.
+
+Picture.
+
+However this is not the end of the story, this small result enlightens
+us to focus on the electron-impact transition, whose cross section is
+big in our case. Apparently, the smaller the energy difference,
+between the initial and final state, the easier to excite, so the
+cross section is bigger.
+
+The total cross section is the sum of all the transitions, so let's
+focus on the dominating one first.
+
+For final state $3^3D$, the most close energy level is $3^1D$, and for
+$2^3P$, it's $2^1P$. Now we look for the cross section of these two
+transitions.
+
+From graph 15 on page 617, $2^3P$ -> $2^1P$, cross section reads
+$\sigma = 10^{-15}cm^2$ @ $0.5eV$
+
+around $0.5eV$, the curve is flat enough to avoid taking average from
+Maxwellian distribution.
+\begin{equation*}
+<v> = 2*10^7 cm/s
+\end{equation*}
+\begin{equation*}
+<\sigma v> = \sigma <v>
+\end{equation*}
+\begin{equation}
+\tau_{ea} = \frac{1}{N_e<\sigma v>} = \frac{1}{N_e \sigma <v>}
+=\frac{1}{2*10^{17}cm^{-3}*10^{-15}cm^2*2*10^7cm/s} = 250 ps
+\end{equation}
+
+Similarly, by graph 28 on page 619, we found excitation from $3^3D$ ->
+$3^1D$ dominates, whose cross section reads:
+\begin{equation}
+\sigma = 4.5 * 10^{-15} cm^2
+\tau_{ea} = \frac{1}{N_e\sigma<v>} = 55ps
+\end{equation}
+
+But this could not explain all the broadening from experiments:
+
+\begin{tabular}{ l c r }
+       & Experiment & Calculation \\
+  587  & 0.3nm(2.1ps) & 55ps \\
+  1080 & 2.2nm(0.6ps) & 250ps \\
+\end{tabular}
+
+This indicates, there should be broadening factors brought in by other
+effects. It should be superradiance. In that case, only the cylinder
+of atoms contributes to superradiance, whose radius is $\lambda$, and
+the length is plasma length.
+
+Picture.
+
+For 587nm, the single atom decay is given by:
+\begin{equation}
+\tau = \frac{1}{A} = 14ns
+\end{equation}
+The superradiance factor is:$N_a\lambda^2L/2\pi$, where
+$N_a=10^{14}cm^{-3}$, $\lambda=587nm$, $L=0.7cm$, so the broadening
+brought in by superradiance is:
+\begin{equation}
+\tau_s=\frac{\tau}{N_a\lambda^2L/2\pi} \\
+= \frac{14ns}{10^{14}*0.587^2*10^{-8}*0.7/2\pi} = 0.364ps
+\end{equation}
+compared with $0.3ps$ experimental measurements, they are on the same
+order.
+
+For $1080nm$, $N_a$ is larger, and
+\begin{equation}
+\tau=\frac{1}{A}=100ns
+\end{equation}
+\begin{equation}
+\tau_s=\frac{\tau}{N_a\lambda^2L/2\pi}=\frac{100ns}{4*10^{14}*1.08^2*0.7*10^{-8}/2\pi}=0.192ps
+\end{equation}
+While the width measured from experiment is $0.2ps$, they are on the
+same order.
+
 \section{Simulation Results}
-\section{Cross section Calculation}
+If after ionization, a Maxwellian distribution could be assumed, it
+will be quite handy. For only two parameters are needed to describe
+the whole system. Otherwise, a more complicated method need to be take
+to handle the distribution, like the code we are using, which traces
+all the particles one by one.
+
+
+\section{Superradiance}
 \section{Carbon line identification}
 %\section{Preliminary data and results on emission and absorption by excited Helium atoms}
-
-
 
 
 %\input{ch-usage/usage_options}
